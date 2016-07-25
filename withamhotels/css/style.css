@@ -1,0 +1,13 @@
+/*
+Theme Name: Witham Hotels
+Description: Child theme of Avada theme for Witham Family Hotels
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+/**** footer ****/
+.fusion-footer .fusion-recent-works {
+  margin-bottom: 0px; }
+
+.fusion-footer-copyright-area .fusion-social-links-footer a {
+  color: white; }
