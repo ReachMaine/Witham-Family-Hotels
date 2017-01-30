@@ -5,6 +5,9 @@ Template: Avada
 Version: 1.0.0
 Text Domain:  Avada
 */
+span.town {
+  font-size: .8em; }
+
 /**** footer ****/
 .fusion-footer .fusion-recent-works {
   margin-bottom: 0px; }
