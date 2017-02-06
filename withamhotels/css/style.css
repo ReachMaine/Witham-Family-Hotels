@@ -5,6 +5,10 @@ Template: Avada
 Version: 1.0.0
 Text Domain:  Avada
 */
+/*** Font ***/
+@font-face {
+  font-family: BirdsOfParadise;
+  src: url("birds-of-paradise.ttf"); }
 span.town {
   font-size: .8em; }
 
@@ -13,7 +17,35 @@ span.town {
 
 .flexslider div.fusion-title {
   padding: 10px;
-  text-shadow: 5px 0px 5px black; }
+  text-shadow: 3px 3px 5px black; }
+  .flexslider div.fusion-title h3 {
+    font-family: 'BirdsOfParadise';
+    font-weight: normal; }
+  .flexslider div.fusion-title h2 b i {
+    letter-spacing: 2px; }
+
+.fusion-main-menu span.menu-text {
+  font-size: 15px; }
+
+#wrapper .post-content .fusion-flip-box h2.flip-box-heading {
+  font-size: 26px; }
+#wrapper .post-content .fusion-flip-box h3.flip-box-heading-back {
+  font-size: 16px; }
+
+/*** Tab in filters ordering (most is in _media) ***/
+div#filter-groups ul {
+  display: flex; }
+  div#filter-groups ul li:nth-child(2) {
+    order: 2; }
+
+div#filter-accommodations ul {
+  display: flex; }
+  div#filter-accommodations ul li:nth-child(2) {
+    order: 4; }
+  div#filter-accommodations ul li:nth-child(3) {
+    order: 3; }
+  div#filter-accommodations ul li:nth-child(4) {
+    order: 2; }
 
 /**** footer ****/
 .fusion-footer .fusion-recent-works {
@@ -21,3 +53,30 @@ span.town {
 
 .fusion-footer-copyright-area .fusion-social-links-footer a {
   color: white; }
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  #masthead {
+    height: inherit !important; }
+    #masthead .header-container {
+      display: block; }
+    #masthead #right-logo-phone {
+      display: block; }
+      #masthead #right-logo-phone .eai-right-image {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Size at which filter tabs stack */
+@media only screen and (max-width: 1080px) {
+  .fusion-filters {
+    flex-wrap: wrap;
+    flex-direction: column; } }
+/* Large Displays: 1280px - 1440px */
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */
