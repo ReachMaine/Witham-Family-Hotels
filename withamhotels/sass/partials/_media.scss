@@ -41,8 +41,14 @@
 }
 
 @media only screen and (min-width: 1080px){
-	.fusion-flip-box .flip-box-back {
-		height: 210px;
+	.fusion-flip-box .flip-box-back, fusion-flip-box .flip-box-front {
+		height: 235px;
+	}
+	.flip-box-back-inner {
+		padding: 19% 0px;
+	}
+	.fusion-one-third.fusion-layout-column.fusion-spacing-yes:nth-of-type(2) .flip-box-back-inner {
+		padding: 9% 0px;
 	}
 }
 

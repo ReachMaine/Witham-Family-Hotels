@@ -34,15 +34,15 @@ $tablet-large: 1024px;
 /*
  * #wrapper {
  *    margin: 0 auto;
- *     
+ *
  *    @include respond-to(handheld) {
  *       width: 100%;
  *    }
- *     
+ *
  *    @include respond-to(tablet) {
  *       width: 98%;
  *    }
- *     
+ *
  *    @include respond-to(desktop) {
  *       width: 92%;
  *    }
