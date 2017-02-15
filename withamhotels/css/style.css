@@ -10,7 +10,8 @@ Text Domain:  Avada
   font-family: BirdsOfParadise;
   src: url("birds-of-paradise.ttf"); }
 span.town {
-  font-size: .8em; }
+  font-size: .8em;
+  font-style: italic; }
 
 .tfs-slider .slide-content-container {
   top: 83%; }
@@ -23,6 +24,9 @@ span.town {
     font-weight: normal; }
   .flexslider div.fusion-title h2 b i {
     letter-spacing: 2px; }
+
+.fusion-slider-container {
+  margin-bottom: 20px; }
 
 .fusion-main-menu span.menu-text {
   font-size: 15px; }
@@ -77,6 +81,9 @@ div#filter-accommodations ul {
   .fusion-filters {
     flex-wrap: wrap;
     flex-direction: column; } }
+@media only screen and (min-width: 1080px) {
+  .fusion-flip-box .flip-box-back {
+    height: 210px; } }
 /* Large Displays: 1280px - 1440px */
 /* X-Large Displays: 1400px and up */
 /* breakpoints for ux_banners */

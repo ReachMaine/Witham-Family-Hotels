@@ -14,6 +14,7 @@ Text Domain:  Avada
 
 span.town {
 	font-size: .8em;
+	font-style: italic;
 }
 
 .tfs-slider .slide-content-container {
@@ -30,6 +31,10 @@ span.town {
 	h2 b i {
 		letter-spacing: 2px;
 	}
+}
+
+.fusion-slider-container {
+	margin-bottom: 20px;
 }
 
 .fusion-main-menu span.menu-text {

@@ -40,6 +40,12 @@
 	}
 }
 
+@media only screen and (min-width: 1080px){
+	.fusion-flip-box .flip-box-back {
+		height: 210px;
+	}
+}
+
 /* Large Displays: 1280px - 1440px */
 @media only screen and (min-width: 80em) {
 }
