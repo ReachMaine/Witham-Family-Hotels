@@ -1,14 +1,25 @@
-<?php 
-	// add the tagline next to the logo 
-	add_action('avada_logo_append', 'bhi_site_tagline', 10);
-	function bhi_site_tagline() {
-		$html_out = '';
-		$html_out .= '<div class="bhi_site_title_wrapper">';
-		$html_out .= 	'<h2 class="bhi_site_title">';
-		$html_out .= 		'<a href="'.site_url().'">';
-		$html_out .= 			get_bloginfo('name', 'raw');
-		$html_out .= 		'</a>';
-		$html_out .= 	"</h2>";
-		$html_out .= '</div>';
-		echo $html_out;
+<?php
+
+	// add shortcode to show the portfolio skills (using for amenitities)
+	if (!function_exists('whf_port_skills')) {
+		add_shortcode('property_amenitities', 'wfh_port_skills');
+
+		function wfh_port_skills($atts) {
+			$atts = shortcode_atts( array(
+					'propID' => get_the_ID(),
+				), $atts );
+			$out_html = "";
+			$terms = get_the_terms($prpoID, 'portfolio_skills');
+			if ($terms && !is_wp_error($terms ) ) {
+				$out_html .= '<ul class="wfp-amenities-list">';
+				foreach ($terms as $amenity) {
+					$out_html .= '<li class="wfp-amenity">';
+					$out_html .= '<div class="amenity-desc">'.$amenity->description.'</div>';
+					$out_html .= '<span class="amenity-name">'.esc_html( $amenity->name ).'</span>';
+					$out_html .= '</li>';
+				}
+				$out_html .= '</ul>';
+			}
+			return $out_html;
+		}
 	}

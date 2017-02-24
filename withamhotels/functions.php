@@ -14,6 +14,7 @@
 
 	/* require_once(get_stylesheet_directory().'/custom/avada.php');  */
 	require_once(get_stylesheet_directory().'/custom/language.php');
+	require_once(get_stylesheet_directory().'/custom/avada.php');
 	add_filter('widget_text', 'do_shortcode'); // make text widget do shortcodes....
 
 	/* image size for facebook */
@@ -23,10 +24,10 @@
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
 	}
-	
-		// contact form 7 fallback for date field 
+
+		// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
