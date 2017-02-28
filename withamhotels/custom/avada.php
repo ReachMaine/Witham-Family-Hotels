@@ -2,7 +2,7 @@
 
 	// add shortcode to show the portfolio skills (using for amenitities)
 	if (!function_exists('whf_port_skills')) {
-		add_shortcode('property_amenitities', 'wfh_port_skills');
+		add_shortcode('property_amenities', 'wfh_port_skills');
 
 		function wfh_port_skills($atts) {
 			$atts = shortcode_atts( array(
