@@ -51,6 +51,24 @@ div#filter-accommodations ul {
   div#filter-accommodations ul li:nth-child(4) {
     order: 2; }
 
+/**** Amenities ****/
+ul.wfp-amenities-list {
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 35px; }
+  ul.wfp-amenities-list li {
+    text-align: center; }
+    ul.wfp-amenities-list li .amenity-desc {
+      font-size: 44px;
+      color: #aa8947;
+      line-height: 1.2; }
+    ul.wfp-amenities-list li .amenity-name {
+      font-size: 18px;
+      color: #aa8947; }
+
 /**** footer ****/
 .fusion-footer .fusion-recent-works {
   margin-bottom: 0px; }
@@ -80,8 +98,19 @@ div#filter-accommodations ul {
 @media only screen and (max-width: 1080px) {
   .fusion-filters {
     flex-wrap: wrap;
-    flex-direction: column; } }
-@media only screen and (min-width: 1080px) {
+    flex-direction: column; }
+
+  ul.wfp-amenities-list li {
+    margin-top: 10px; }
+    ul.wfp-amenities-list li .amenity-desc {
+      font-size: 24px; }
+    ul.wfp-amenities-list li .amenity-name {
+      font-size: 14px; } }
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+  ul.wfp-amenities-list li {
+    width: 19%; }
+
   .fusion-flip-box .flip-box-back, fusion-flip-box .flip-box-front {
     height: 235px; }
 
@@ -90,6 +119,5 @@ div#filter-accommodations ul {
 
   .fusion-one-third.fusion-layout-column.fusion-spacing-yes:nth-of-type(2) .flip-box-back-inner {
     padding: 9% 0px; } }
-/* Large Displays: 1280px - 1440px */
 /* X-Large Displays: 1400px and up */
 /* breakpoints for ux_banners */

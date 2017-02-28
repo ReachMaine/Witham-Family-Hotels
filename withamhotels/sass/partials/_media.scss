@@ -23,7 +23,6 @@
 		}
 
 	}
-
 }
 
 /* Medium Displays: 768px - 1279px */
@@ -38,9 +37,28 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
+	ul.wfp-amenities-list {
+		li {
+			margin-top: 10px;
+			.amenity-desc {
+				font-size: 24px;
+			}
+			.amenity-name {
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1080px){
+}
+
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+	ul.wfp-amenities-list li {
+		width: 19%;
+	}
+
 	.fusion-flip-box .flip-box-back, fusion-flip-box .flip-box-front {
 		height: 235px;
 	}
@@ -50,10 +68,6 @@
 	.fusion-one-third.fusion-layout-column.fusion-spacing-yes:nth-of-type(2) .flip-box-back-inner {
 		padding: 9% 0px;
 	}
-}
-
-/* Large Displays: 1280px - 1440px */
-@media only screen and (min-width: 80em) {
 }
 
 /* X-Large Displays: 1400px and up */
