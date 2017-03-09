@@ -69,6 +69,11 @@ ul.wfp-amenities-list {
       font-size: 18px;
       color: #aa8947; }
 
+/**** wp-job manager and addons *****/
+ul.job_listings li.job_listing a img.company_logo,
+.single_job_listing .company img {
+  height: auto; }
+
 /**** footer ****/
 .fusion-footer .fusion-recent-works {
   margin-bottom: 0px; }
